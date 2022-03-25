@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.10.11:8080
+functions:
+  getip:
+    lang: java11
+    handler: ./getip
+    image: ${DOCKER_USER}/getip:latest
+
