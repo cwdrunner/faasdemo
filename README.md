@@ -4,11 +4,13 @@ This is one of the home lab projects. Initially this README contains a general d
 ## architecture
 The home lab consists of the following components:
 
-- 4 Raspbery Pi 4b with 4Gb Ram. Arm CPU. 32 Gb micro SD cards. POE Hats, This group acts as the K3s cluster
+- 4 Raspbery Pi 4b with 4Gb Ram. Arm CPU. 32 Gb micro SD cards. POE Hats, This group acts as the K3s cluster. Static IP addresses. 192.168.10.11-192.168.10.14
 - 2-4 port POE Gb unmanaged routers. Obviously an 8 or 16 port router would be better but the lab evolved.
 - A spare HP laptop. AMD CPU. The laptop became a major controller as a lot of things wouldn't run on ARM and so it was easier to move forward. 
-Future projects could push the technology out. 
-- Misc other Pis for NAS, Home Automation, monitoring the aquarium. 
+Future projects could push the technology out. Static IP address to make it easy to find.
+- Another Pi configured for NAS. Static IP address. Running OpenMedia Vault. Connected to spare external USB hard drive. 192.168.10.2
+- Other misc Pis for Home Automation, monitoring the aquarium.
+- A leftover Lynksys wireless router conected to either the cable modem or another router. This keeps the home lab on it's own network. It's possible to log into the homelab network. 
 
 
 ## The process
