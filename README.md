@@ -1,7 +1,17 @@
 # faasdemo
-This is one of those home lab projects. Initially this README contains a general description and some of the issues encountered so they can be avoided next time. i'll refine it to be more complete so stop back. 
+This is one of those home lab projects. Initially this README contains a general description and some of the issues encountered so they can be avoided next time. I'll refine it to be more complete so stop back.
 
-## architecture
+This particular repo is going to be focused on Functions As A Service or faas. There are several versions of this and I'm going to try and get familair with several of them and document what I learned and the issues encountered. 
+
+## Flavoers of faas
+I already have some experience using AWS Lambdas on a project. It helped me to identify some of things to look out for. 
+- Limited memory. We were using typescript and the application wanted to include many, many packages. Look at dry it you want to keep these down. 
+- Warm startup versus cold startup. This is important for scaling
+- Languages you can use
+- How do you get secrets like passwords.
+- 
+
+## The home lab architecture
 The home lab consists of the following components:
 
 - 4 Raspberry Pi 4b with 4Gb Ram. Arm CPU. 32 Gb micro SD cards. POE Hats, This group acts as the K3s cluster. Static IP addresses. 192.168.10.11-192.168.10.14
@@ -22,4 +32,12 @@ Issue #2 - Since the faascli commands are run on the laptop and not one of the p
 
 ## Ansible Tower Project
 Now that the first OpenFaas functions have been deployed manually, this project will evolve into deploying, monitoring, and undeploying the functions using Ansible towner installed on the HP laptop. 
+
+
+## References
+Installing OpenFaaS On k3s (Single Node) https://midnightprogrammer.net/post/installing-openfaas-on-k3s-single-node/
+
+OpenFaas Deployment guide for Kubernetes https://docs.openfaas.com/deployment/kubernetes/
+
+https://rpi4cluster.com/ 
 
