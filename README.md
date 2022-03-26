@@ -10,7 +10,7 @@ The home lab consists of the following components:
 Future projects could push the technology out. Static IP address to make it easy to find.
 - Another Pi configured for NAS. Static IP address. Running OpenMedia Vault. Connected to spare external USB hard drive. 192.168.10.2
 - Other misc Pis for Home Automation, monitoring the aquarium.
-- A leftover Lynksys wireless router conected to either the cable modem or another router. This keeps the home lab on it's own network. It's possible to log into the homelab network. 
+- A leftover Lynksys wireless router connected to either the cable modem or another router. This keeps the home lab on it's own network. Since this is a wireless router it's possible to login to the network from another laptop or to take the hp mobile to do work.
 
 
 ## The process
@@ -20,4 +20,6 @@ Issue #1 - Doing faascli build creates the Dockerfile which when run pushes the 
 
 Issue #2 - Since the faascli commands are run on the laptop and not one of the pis that are part of the cluster you have to make sure the faas gateway host in the cluster is part of the deployment. Many tutorials us 127.0.0.1 or localhost as the gateway address. Don't do it. 
 
+## Ansible Tower Project
+Now that the first OpenFaas functions have been deployed manually, this project will evolve into deploying, monitoring, and undeploying the functions using Ansible towner installed on the HP laptop. 
 
