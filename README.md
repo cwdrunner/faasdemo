@@ -10,3 +10,12 @@ The home lab consists of the following components:
 Future projects could push the technology out. 
 - Misc other Pis for NAS, Home Automation, monitoring the aquarium. 
 
+
+## The process
+Basically, one of many processes for installing k3s on Pi and then for installing faascli. 
+
+Issue #1 - Doing faascli build creates the Dockerfile which when run pushes the container to a repo. Something about this setup requires that the Docker User is prepended to the pushed image name. So  cwdrunner/test:lastest. 
+
+Issue #2 - Since the faascli commands are run on the laptop and not one of the pis that are part of the cluster you have to make sure the faas gateway host in the cluster is part of the deployment. Many tutorials us 127.0.0.1 or localhost as the gateway address. Don't do it. 
+
+
