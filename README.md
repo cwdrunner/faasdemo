@@ -1,5 +1,5 @@
 # faasdemo
-This is one of the home lab projects. Initially this README contains a general description and some of the issues encountered so they can be avoided next time. 
+This is one of those home lab projects. Initially this README contains a general description and some of the issues encountered so they can be avoided next time. i'll refine it to be more complete so stop back. 
 
 ## architecture
 The home lab consists of the following components:
