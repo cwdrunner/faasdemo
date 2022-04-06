@@ -1,0 +1,1000 @@
+  911  ip a
+  912  ping 192.168.10.111
+  913  ping 192.168.10.112
+  914  ping 192.168.10.113
+  915  ping 192.168.10.114
+  916  ping 192.168.10.11
+  917  ping 192.168.10.14
+  918  ping 192.168.10.13
+  919  ping 192.168.10.12
+  920  ping 192.168.10.11
+  921  ping 192.168.10.14
+  922  ip a | grep wlan
+  923  ip a
+  924  ping 192.168.10.14
+  925  ping 192.168.10.11
+  926  ansible pi_stack -i inventory.yaml -m ping
+  927  ls
+  928  vi inventory.yaml 
+  929  ansible pi_stack -i inventory.yaml -m ping
+  930  export ANSIBLE_HOST_KEY_CHECKING=False 
+  931  ansible pi_stack -i inventory.yaml -m ping
+  932  python --version
+  933  /usr/bin/python --version
+  934  ls
+  935  mkdir pi-secure
+  936  mv inventory.yaml pi-secure/
+  937  cd pi-secure/
+  938  cd
+  939  ls -al
+  940  cd .ssh
+  941  ls
+  942  ssh-keygen
+  943  ls
+  944  su - root
+  945  540T6unmv inventory.yaml pi-secure/
+  946  su - root
+  947  cd
+  948  cd .ssh
+  949  ls
+  950  mv is* ..
+  951  mv id* ..
+  952  cd ..
+  953  mv id* .ssh
+  954  cd Projects/
+  955  cd pi-secure/
+  956  ls
+  957  vi pi-secure.yaml
+  958  pwd
+  959  vi pi-secure.yaml
+  960  ls ~/.ssh
+  961  vi pi-secure.yaml
+  962  nano pi-secure.yaml
+  963  vi pi-secure.yaml
+  964  ls
+  965  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  966  vi pi-secure.yaml
+  967  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  968  vi pi-secure.yaml
+  969  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  970  vi pi-secure.yaml
+  971  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  972  vi pi-secure.yaml
+  973  more inventory.yaml 
+  974  vi pi-secure.yaml
+  975  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  976  vi pi-secure.yaml
+  977  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  978  vi pi-secure.yaml
+  979  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  980  ssh pi@192.168.10.11
+  981  more inventory.yaml 
+  982  ssh pi@192.168.10.11
+  983  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  984  ssh pi@192.168.10.11
+  985  vi pi-secure.yaml
+  986  ansible-playbook -i inventory.yaml pi-secure.yaml 
+  987  ssh pi@192.168.10.11
+  988  ssh -help
+  989  cd
+  990  ssh pi@192.168.10.11
+  991  cd .ssh
+  992  ls -l
+  993  chmod 600 id_rsa_pi
+  994  ls -l
+  995  ssh -i id_rsa_pi  pi@192.168.10.11
+  996  cd ..
+  997  cd Projects/
+  998  cd pi-secure/
+  999  vi pi-secure.yaml 
+ 1000  ssh pi@192.168.10.11
+ 1001  ansible-playbook -i inventory.yaml pi-secure.yaml 
+ 1002  ssh pi@192.168.10.11
+ 1003  ansible-playbook -i inventory.yaml pi-secure.yaml 
+ 1004  vi inventory.yaml 
+ 1005  ansible-playbook -i inventory.yaml pi-secure.yaml 
+ 1006  ssh pi@192.168.10.13
+ 1007  ping 192.168.10.13
+ 1008  ansible-playbook -i inventory.yaml pi-secure.yaml 
+ 1009  ping 192.168.10.13
+ 1010  history | grep ansible
+ 1011  ansible pi_stack -i inventory.yaml -m ping
+ 1012  ssh pi@192.168.10.13
+ 1013  ansible pi_stack -i inventory.yaml -m ping
+ 1014  ansible-playbook -i inventory.yaml pi-secure.yaml 
+ 1015  ls
+ 1016  cd ..
+ 1017  ls
+ 1018  cd awx
+ 1019  ls
+ 1020  cd awx
+ 1021  ls
+ 1022  cd plybooks
+ 1023  cd playbooks/
+ 1024  ls
+ 1025  cd
+ 1026  cd /var/lib/awx/projects
+ 1027  ls
+ 1028  sudo mkdir test
+ 1029  cd test
+ 1030  ls
+ 1031  vi test_ping.yaml
+ 1032  sudo vi test_ping.yaml
+ 1033  ls -l
+ 1034  ls
+ 1035  sudo mv test_ping.yaml test.yml
+ 1036  cd ..
+ 1037  ls -l
+ 1038  chmod +ro *
+ 1039  chmod +or *
+ 1040  chmod 0+r *
+ 1041  chmod 0 +r *
+ 1042  sudo chmod 0 +r *
+ 1043  sudo chmod  +r *
+ 1044  ls -l
+ 1045  sudo chmod 766 *
+ 1046  ls -l
+ 1047  pwd
+ 1048  ls -l
+ 1049  cd test
+ 1050  sudo rm pi-security/
+ 1051  sudo rm -rf  pi-security/
+ 1052  ls
+ 1053  ls -l
+ 1054  rm -rf test
+ 1055  sudo rm -rf test
+ 1056  ls -l
+ 1057  sudo mkdir test
+ 1058  ls -l
+ 1059  chmod 777 test
+ 1060  sudo chmod 777 test
+ 1061  cd test
+ 1062  ls
+ 1063  cd ..
+ 1064  ls -l
+ 1065  cd test
+ 1066  sudo vi test.yml
+ 1067  ls -l
+ 1068  su -m awx
+ 1069  docker list
+ 1070  docker
+ 1071  docker ps
+ 1072  sudo docker ps
+ 1073  cd
+ 1074  cd Projects/
+ 1075  ls
+ 1076  cd awx
+ 1077  ls
+ 1078  cd awx
+ 1079  ls
+ 1080  cd ..
+ 1081  ls
+ 1082  cd tools
+ 1083  ls
+ 1084  docker exec -it tools_awx_1 bash
+ 1085  sudo docker exec -it tools_awx_1 bash
+ 1086  history | grep kubectl
+ 1087  kubectl get pods
+ 1088  sudo kubectl get pods
+ 1089  sudo kubectl config set-context --current --namespace=$NAMESPACE
+ 1090  sudo kubectl get pods
+ 1091  env | grep NAME
+ 1092  kubectl
+ 1093  kubectl get
+ 1094  sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+ 1095  sudo kubectl get pods
+ 1096  history | grep NAMESPACE
+ 1097  export NAMESPACE=awx
+ 1098  kubectl config set-context --current --namespace=$NAMESPACE
+ 1099  sudo chmod 644 /etc/rancher/k3s/k3s.yaml.lock
+ 1100  kubectl config set-context --current --namespace=$NAMESPACE
+ 1101  sudo chmod 644 /etc/rancher/k3s/k3s.yaml.lock
+ 1102  sudo kubectl config set-context --current --namespace=$NAMESPACE
+ 1103  sudo kubectl get pods
+ 1104  kubectl get pods
+ 1105  cd
+ 1106  vi .bashrc
+ 1107  kubectl config set-context --current --namespace=$NAMESPACE
+ 1108  ls -l /etc/rancher/k3s/k3s.yaml
+ 1109  sudo chmod 666 /etc/rancher/k3s/k3s.yaml
+ 1110  ls -l /etc/rancher/k3s/k3s.yaml
+ 1111  kubectl config set-context --current --namespace=$NAMESPACE
+ 1112  ls -l /etc/rancher/k3s/k3s.yaml.lock
+ 1113  ls
+ 1114  cd Projects/
+ 1115  ls
+ 1116  cd sysmanagement/
+ 1117  ls
+ 1118  cd playbooks/
+ 1119  ls
+ 1120  cd ..
+ 1121  ls
+ 1122  cd ..
+ 1123  ls
+ 1124  cd pi-secure/
+ 1125  ls
+ 1126  cp ../sysmanagement/playbooks/ping_test.yml .
+ 1127  ansible-playbook -i inventory.yaml ping_test.yml 
+ 1128  vi ping_test.yml 
+ 1129  ansible-playbook -i inventory.yaml ping_test.yml 
+ 1130  vi ping_test.yml 
+ 1131  ansible-playbook -i inventory.yaml ping_test.yml 
+ 1132  ls
+ 1133  cp ping_test.yml ../sysmanagement/playbooks/
+ 1134  cd ../sysmanagement/playbooks/
+ 1135  ls
+ 1136  more ping_test.yml 
+ 1137  git add .
+ 1138  git commit -m "fix ping"
+ 1139  git push
+ 1140  ip a
+ 1141  ls
+ 1142  vi ping_test.yml
+ 1143  git add .
+ 1144  git commit -m"narrow hosts"
+ 1145  git push
+ 1146  cd
+ 1147  ssh pi@192.168.10.11
+ 1148  ssh pi@192.168.10.12
+ 1149  ssh pi@192.168.10.13
+ 1150  ssh pi@192.168.10.14
+ 1151  ssh pi@192.168.10.11
+ 1152  history | grep kubectl
+ 1153  ssh pi@192.168.10.11
+ 1154  cd
+ 1155  ls
+ 1156  vi notes.txt
+ 1157  ssh pi@192.168.10.11
+ 1158  cd
+ 1159  ls
+ 1160  more pat
+ 1161  ssh pi@192.168.10.11
+ 1162  sudo apt install apt-utils
+ 1163  kubectl
+ 1164  sudo systemctl status k3s
+ 1165  cd
+ 1166  sudo systemctl status k3s
+ 1167  kubectl rollout status -n openfaas deploy/gateway
+ 1168  sudo chmod 766 /etc/rancher/k3s/k3s.yaml
+ 1169  kubectl rollout status -n openfaas deploy/gateway
+ 1170  arkade install openfaas
+ 1171  curl -SLsf <a href="https://dl.get-arkade.dev/">https://dl.get-arkade.dev/ | sudo sh
+ 1172  curl -sLS https://get.arkade.dev | sudo sh
+ 1173  arkade install openfaas
+ 1174  sudo arkade install openfaas
+ 1175  ls -l /tmp/helm-v3.5.2-linux-amd64.tar.gz
+ 1176  rm /tmp/helm-v3.5.2-linux-amd64.tar.gz
+ 1177  sudo arkade install openfaas
+ 1178  ls -l /tmp
+ 1179  ls -l /
+ 1180  ls -l /tmp
+ 1181  rm -rf /tmp/helm
+ 1182  cd /tmp
+ 1183  rm -rf *
+ 1184  ls -l
+ 1185  cd
+ 1186  sudo arkade install openfaas
+ 1187  kubectl
+ 1188  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+ 1189  cd 
+ 1190  ls -al
+ 1191  vi .bashrc
+ 1192  sudo arkade install openfaas
+ 1193  kubectl config view --raw > ~/.kube/config
+ 1194  sudo arkade install openfaas
+ 1195  helm repo update
+ 1196  curl -v http://localhost:8080/version?timeout=32s
+ 1197  history | grep kubectl
+ 1198  kubectl get pods
+ 1199  sudo kubectl config set-context --current --namespace=$NAMESPACE
+ 1200  kubectl get pods
+ 1201  kubectl
+ 1202  kubectl config view
+ 1203  env
+ 1204  kubectl config view
+ 1205  kubectl get pods --all-namespaces
+ 1206  cd
+ 1207  ssh 192.168.10.11
+ 1208  ssh pi@192.168.10.11
+ 1209  sudo curl http://cli.openfaas.com | sudo sh
+ 1210  curl -sL <a class="vglnk" href="https://cli.openfaas.com" rel="nofollow"><span>https</span><span>://</span><span>cli</span><span>.</span><span>openfaas</span><span>.</span><span>com</span></a> | sudo sh
+ 1211  sudo curl https://cli.openfaas.com | sudo sh
+ 1212  sudo curl -sSL https://cli.openfaas.com | sudo -E sh
+ 1213  cd
+ 1214  ls
+ 1215  ls -l
+ 1216  cd Projects
+ 1217  ls
+ 1218  mkdir openfaas_scripts
+ 1219  cd openfaas_scripts/
+ 1220  faas-cli template store list
+ 1221  cd ..
+ 1222  ls
+ 1223  cd openfaas_scripts/
+ 1224  ls
+ 1225  fass-cli template pull
+ 1226  faas-cli template pull
+ 1227  faas-cli new --lang java8 reverseString
+ 1228  faas-cli new --lang java8 reversestring
+ 1229  faas-cli new --lang java11 reversestring
+ 1230  ls
+ 1231  ls -l reversestring
+ 1232  more reversestring.yml
+ 1233  cd reversestring/
+ 1234  cd src
+ 1235  ls
+ 1236  cd main
+ 1237  ls
+ 1238  cd java
+ 1239  ls
+ 1240  com com
+ 1241  ls
+ 1242  cd com
+ 1243  ls
+ 1244  cd openfaas/
+ 1245  ls
+ 1246  cd function/
+ 1247  ls
+ 1248  more Handler.java 
+ 1249  cd ../../..
+ 1250  ls
+ 1251  cd ..
+ 1252  ls
+ 1253  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1254  docker
+ 1255  which docker
+ 1256  ls
+ 1257  more reversestring.yml 
+ 1258  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1259  faas-cli
+ 1260  faas-cli publish -v -f reversestring.yml --platforms linux/arm64
+ 1261  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1262  faas-cli build -f reversestring.yml --platforms linux/arm64
+ 1263  faas-cli build -f reversestring.yml
+ 1264  sudo chmod 666 /var/run/docker.sock
+ 1265  faas-cli build -f reversestring.yml
+ 1266  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1267  ls 
+ 1268  docker run -p 8080:8080 --name test-this \
+ 1269  docker run -p 8080:8080 --name reversestring -ti reversestring:latest
+ 1270  $ docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+ 1271  docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+ 1272  export DOCKER_CLI_EXPERIMENTAL=enabled
+ 1273  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1274  which faas-cli
+ 1275  ls -l /usr/local/bin/faas-cli
+ 1276  docker buildx
+ 1277  docker --version
+ 1278  cd ..
+ 1279  mv openfaas_scripts/ faasDemos
+ 1280  cd faasDemos/
+ 1281  ls -l
+ 1282  more openfaas_install.txt 
+ 1283  vi openfaas_install.txt 
+ 1284  cd
+ 1285  ls -l
+ 1286  ls -al
+ 1287  vi .bashrc
+ 1288  cd .docker
+ 1289  find / -name cli-plugins
+ 1290  cd .docker
+ 1291  mkdir .docker
+ 1292  cd .docker
+ 1293  vi config.json
+ 1294  docker buildx
+ 1295  sudo apt-get remove docker docker-engine docker.io containerd runc
+ 1296  sudo apt-get update
+ 1297  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+ 1298  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 1299  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ 1300    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1301  sudo apt-get update
+ 1302  sudo apt-get install docker-ce docker-ce-cli containerd.io
+ 1303  sudo docker run hello-world
+ 1304  cd .docker
+ 1305  ls
+ 1306  more config.json
+ 1307  cd
+ 1308  cd
+ 1309  cd Projects/
+ 1310  cd faasDemos/
+ 1311  ls
+ 1312  huistory
+ 1313  history
+ 1314  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1315  history | grep docker.sock
+ 1316  sudo chmod 666 /var/run/docker.sock
+ 1317  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1318  docker login
+ 1319  faas-cli publish -f reversestring.yml --platforms linux/arm64
+ 1320  env
+ 1321  history | grep faas-cli
+ 1322  faas-cli new --lang java11 getip
+ 1323  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1324  ls
+ 1325  cd getip
+ 1326  ls
+ 1327  ;s
+ 1328  ls
+ 1329  cd src
+ 1330  ls
+ 1331  cd ..
+ 1332  ls
+ 1333  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1334  buildx build --progress=plain --platform=linux/arm64 --output=type=registry,push=true --tag getip:latest .
+ 1335  docker buildx build --progress=plain --platform=linux/arm64 --output=type=registry,push=true --tag getip:latest .
+ 1336  ls /tmp
+ 1337  cd getip/
+ 1338  ls
+ 1339  ls -l
+ 1340  ls -al
+ 1341  cd ..
+ 1342  more getip
+ 1343  ls -l
+ 1344  more getip.yml
+ 1345  cd getip
+ 1346  ls
+ 1347  more build.gradle
+ 1348  ls
+ 1349  more settings.gradle 
+ 1350  ls
+ 1351  cd ..
+ 1352  ls
+ 1353  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1354  docker list
+ 1355  docker
+ 1356  docker ls
+ 1357  docker ps
+ 1358  docker container
+ 1359  docker container ls
+ 1360  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1361  docker container ls --all
+ 1362  docker image
+ 1363  docker image ls
+ 1364  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1365  docker login
+ 1366  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1367  history | grep qemu
+ 1368  docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
+ 1369  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1370  ls
+ 1371  sudo apt-get install binfmt-support qemu-user-static
+ 1372  sudo apt-get install docker.io
+ 1373  sudo apt-get install containerd
+ 1374  sudo reboot
+ 1375  sudo chmod 766 /etc/rancher/k3s/k3s.yaml
+ 1376  sudo apt-get install docker.io
+ 1377  cd
+ 1378  cd .docker
+ 1379  ls
+ 1380  cd
+ 1381  cd Projects/
+ 1382  docker buildx create --name mbuilder
+ 1383  11. Name:      mbuilder0
+ 1384  12. Endpoint:  unix:///var/run/docker.sock
+ 1385  13. Status:    running
+ 1386  14. Platforms: linux/arm64, linux/amd64, linux/riscv64, linux/ppc64le,
+ 1387  linux/s390x, linux/386, linux/arm/v7, linux/arm/v6
+ 1388  Perfect, we now have a builder capable of targeting linux/arm64 linux/amd64, and other architectures!
+ 1389  Now let’s build an image that can be run on both Linux amd64 and arm64 from a simple Dockerfile.
+ 1390  Note that the image you are pulling from must also support the architectures you plan to target. This can be checked using:
+ 1391  $ docker buildx imagetools inspect alpine
+ 1392  Dockerfile:
+ 1393  FROM alpine
+ 1394  RUN apk add util-linux
+ 1395  CMD ["lscpu"]
+ 1396  $ docker buildx build --platform linux/amd64,linux/arm64 -t foo4u/demo-mutliarch:2 --push .
+ 1397  [+] Building 4.7s (9/9) FINISHED
+ 1398  There’s a lot going on here so let’s unpack it:
+ 1399  1. Docker transfers the build context to our builder container
+ 1400  2. The builder builds an image for each architecture we requested with the --platform argument
+ 1401  3. The images are pushed to Docker Hub
+ 1402  4. Buildx generates a manifest JSON file pushes that to Docker Hub as the image tag.
+ 1403  Let’s use imagetools to inspect the generated Docker image:
+ 1404  1. $ docker buildx imagetools inspect foo4u/demo-mutliarch:2
+ 1405  2. Name:  docker.io/foo4u/demo-mutliarch:2
+ 1406  3. MediaType: application/vnd.docker.distribution.manifest.list.v2+json
+ 1407  4. Digest:    sha256:3b4e4135b92017e5214421543b813e83a77fcea759af8067c685b70a5d978497
+ 1408  5.
+ 1409  6. Manifests:
+ 1410  7. Name:  docker.io/foo4u/demo-mutliarch:2@sha256:cb54200a7c04dded134ca9e3e6a0e434c2fdf851fb3a7226941d0983ad5bfb88
+ 1411  8. MediaType: application/vnd.docker.distribution.manifest.v2+json
+ 1412  9. Platform:  linux/amd64
+ 1413  10. 
+ 1414  11. Name:  docker.io/foo4u/demo-12. mutliarch:2@sha256:6f4fe17def66ef5bc79279448e1cb77a1642d460ed58d5dc60d0e472c023e2eb
+ 1415  12. MediaType: application/vnd.docker.distribution.manifest.v2+json
+ 1416  13. Platform:  linux/arm64
+ 1417  Here we can see that foo4u/demo-multiarch:2 is a JSON manifest pointing to the manifests for each of the platforms we targeted during the build. Although the image appears on the registry as a single image, it’s actually a manifest containing links to the platform specific images. Buildx built and a published an image per architecture and then generated a manifest linking them together.
+ 1418  Docker uses this information when pulling the image to download the appropriate image for the machine’s runtime architecture.
+ 1419  Let’s run the image on x86–64 / amd64:
+ 1420  $ docker run --rm foo4u/demo-mutliarch:2
+ 1421  Unable to find image 'foo4u/demo-mutliarch:2' locally
+ 1422  2: Pulling from foo4u/demo-mutliarch
+ 1423  e6b0cf9c0882: Already exists 
+ 1424  Status: Downloaded newer image for foo4u/demo-mutliarch:2
+ 1425  Architecture:                    x86_64
+ 1426  Now let’s run the image on arm64:
+ 1427  $ docker run --rm foo4u/demo-mutliarch:2
+ 1428  Unable to find image 'foo4u/demo-mutliarch:2' locally
+ 1429  2: Pulling from foo4u/demo-mutliarch
+ 1430  Status: Downloaded newer image for foo4u/demo-mutliarch:2
+ 1431  Architecture:                    aarch64
+ 1432  That’s it! Now we have a fully functioning Docker image that we can run on either our existing x86–64 servers or our shiny new ARM 64 servers!
+ 1433  In conclusion, getting started with multi-architecture Docker images on Linux isn’t so hard. We can even use an ARM server to build the images, potentially saving us money on our CI/CD server(s) as well as our staging and production infrastructure.
+ 1434  Bonus: you can further optimize your Docker builds if the language you use for has good multi-architecture support (such as Java or Go). For example, you can build a Spring Boot application with a single platform compile:
+ 1435  1. FROM --platform=$BUILDPLATFORM amazoncorretto:11 as builder
+ 1436  2. 
+ 1437  3. COPY . /srv/
+ 1438  4. WORKDIR /srv
+ 1439  5. RUN ./mvnw -DskipTests=true package spring-boot:repackage
+ 1440  6.
+ 1441  7. FROM amazoncorretto:11
+ 1442  8. 
+ 1443  9. COPY --from=builder /srv/target/my-service-0.0.1-SNAPSHOT.jar /srv/
+ 1444  10. 
+ 1445  11. EXPOSE 8080
+ 1446  12. 
+ 1447  13. ENTRYPOINT ["java", "-jar", "/srv/my-service-0.0.1-SNAPSHOT.jar"]
+ 1448  Tags:
+ 1449  API
+ 1450  Cloud Translation
+ 1451  Integrations
+ 1452  Meet our Translators
+ 1453  The leading translation management platform to localize your content across devices and platforms.
+ 1454  docker buildx
+ 1455  sudo apt-get install jq
+ 1456  cd
+ 1457  mkdir -p ~/.docker/cli-plugins
+ 1458  BUILDX_URL=$(curl https://api.github.com/repos/docker/buildx
+ 1459  /releases/latest | jq -r .assets[].browser_download_url | grep amd64
+ 1460  7. wget $BUILDX_URL -O ~/.docker/cli-plugins/docker-build
+ 1461  q
+ 1462  BUILDX_URL=$(curl https://api.github.com/repos/docker/buildx
+ 1463  /releases/latest | jq -r .assets[].browser_download_url | grep amd64)
+ 1464  BUILDX_URL=$(curl https://api.github.com/repos/docker/buildx
+ 1465  /releases/latest | jq -r .assets[].browser_download_url | grep amd64)
+ 1466  vi tmp
+ 1467  BUILDX_URL=$(curl https://api.github.com/repos/docker/buildx/releases/latest | jq -r .assets[].browser_download_url | grep amd64)
+ 1468  wget $BUILDX_URL -O ~/.docker/cli-plugins/docker-build
+ 1469  chmod +x ~/.docker/cli-plugins/docker-buildx
+ 1470  ls /home/bill/.docker/cli-plugins/
+ 1471  ls /home/bill/.docker/cli-plugins/docker-build 
+ 1472  chmod +x  /home/bill/.docker/cli-plugins/docker-build 
+ 1473  docker buildx
+ 1474  cd .docker
+ 1475  ls
+ 1476  more config.json 
+ 1477  sudo usermod -aG docker bill
+ 1478  docker buildx
+ 1479  sudo reboot
+ 1480  docker logs tail -f
+ 1481  docker logs -f registry
+ 1482  cd
+ 1483  ls
+ 1484  tail .bashrc
+ 1485  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+ 1486  docker buildx
+ 1487  docker run hello-world
+ 1488  docker version
+ 1489  ls Downloads
+ 1490  ls -l Downloads
+ 1491  cd .docker
+ 1492  ls
+ 1493  cd cli-plugins/
+ 1494  ls
+ 1495  cd docker-build
+ 1496  ls -l
+ 1497  cp ~/Downloads/buildx-v0.8.0.linux-amd64 ./docker-buildx
+ 1498  ls -l
+ 1499  chmod +x docker-buildx
+ 1500  docker buildx
+ 1501  cd
+ 1502  cd Projects/
+ 1503  ls
+ 1504  rm '='
+ 1505  rm CACHED
+ 1506  rm exporting
+ 1507  rm '[internal]' 
+ 1508  rm resolve
+ 1509  rm transferring 
+ 1510  rm pushing 
+ 1511  ls -l
+ 1512  cd faasDemos/
+ 1513  history | grep faas-cli
+ 1514  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1515  docker buildx create --name mbuilder
+ 1516  docker buildx use mbuilder
+ 1517  docker buildx --inspect bootstrap
+ 1518  docker buildx inspect --bootstrap
+ 1519  docker buildx imagetools inspect alpine
+ 1520  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1521  ls -al
+ 1522  cd build
+ 1523  ls
+ 1524  cd getip
+ 1525  ls
+ 1526  buildx build --progress=plain --platform=linux/arm64 --output=type=registry,push=true --tag getip:latest .
+ 1527  docker buildx build --progress=plain --platform=linux/arm64 --output=type=local --tag getip:latest .
+ 1528  ls
+ 1529  ls -l
+ 1530  more README.md 
+ 1531  docker buildx
+ 1532  buildx build --progress=plain --platform=linux/arm64 --output=type=registry --tag getip:latest .
+ 1533  docker buildx build --progress=plain --platform=linux/arm64 --output=type=registry --tag getip:latest .
+ 1534  docker buildx build --progress=plain --platform=linux/arm64 --output=type=local --tag getip:latest .
+ 1535  docker buildx build --progress=plain --platform=linux/arm64 --output=type=local --tag getip:latest --dest=./platform .
+ 1536  docker buildx build --progress=plain --platform=linux/arm64 --output=type=local,dest=./platform --tag getip:latest  .
+ 1537  curl -sSLk https://localhost:5000/v2/
+ 1538  docker buildx ls
+ 1539  docker buildx build --progress=plain --platform=linux/arm64 --output=type=registry --tag docker.io/getip:latest .
+ 1540  docker buildx build --progress=plain --platform=linux/arm64 --push --tag docker.io/getip:latest .
+ 1541  docker run -d -p 5000:5000 --restart=always --name registry registry:2
+ 1542  docker buildx build --progress=plain --platform=linux/arm64 --push --tag localhost:5000/getip:latest .
+ 1543  history | grep curl
+ 1544  curl -sSLk https://localhost:5000/v2/
+ 1545  curl -sSLk https://localhost:5000
+ 1546  curl -v -sSLk https://localhost:5000
+ 1547  curl -v -sSLk http://localhost:5000
+ 1548  curl -sSLk http://localhost:5000/v2/
+ 1549  history | grep curl
+ 1550  docker buildx build --progress=plain --platform=linux/arm64 --push --tag localhost:5000/getip:latest .
+ 1551  docker logs -f registry
+ 1552  docker pull ubuntu
+ 1553  docker tag ubuntu localhost:5000/ubuntu
+ 1554  docker push localhost:5000/ubuntu
+ 1555  docker buildx build --progress=plain --platform=linux/arm64 --push --tag localhost:5000/getip:latest .
+ 1556  docker ps
+ 1557  history docker log
+ 1558  history | grep docker log
+ 1559  history | grep log
+ 1560  docker buildx build --progress=plain --platform=linux/arm64 --push --tag localhost:5000/getip:latest .
+ 1561  ls
+ 1562  cd platform
+ 1563  ls
+ 1564  cd ..
+ 1565  docker buildx build --progress=plain --platform=linux/arm64 --push --tag localhost:5000/getip:latest .
+ 1566  docker buildx build --progress=plain --platform=linux/arm64 --push --tag getip:latest .
+ 1567  cd ..
+ 1568  ls
+ 1569  cat <<'EOD' > Dockerfile
+ 1570  FROM alpine
+ 1571  RUN touch /test
+ 1572  EOD
+ 1573  ls
+ 1574  docker buildx build    -t img.service.consul/alpine:test   --platform=linux/amd64,linux/arm64,linux/arm   --push   .
+ 1575  ping 192.168.10.1:53
+ 1576  ping 192.168.10.1
+ 1577  ip a
+ 1578  docker buildx build    -t img.service.consul/alpine:test   --platform=linux/amd64,linux/arm64,linux/arm   --push   .
+ 1579  more /etc/resolv.conf
+ 1580  resolvectl status
+ 1581  ls /etc/systemd
+ 1582  resolvectl
+ 1583  ls
+ 1584  cd getip
+ 1585  ls
+ 1586  ls -l
+ 1587  cd ..
+ 1588  ls
+ 1589  cd build
+ 1590  ls
+ 1591  cd getip
+ 1592  ls
+ 1593  ls -l
+ 1594  more Dockerfile
+ 1595  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push --driver-opt network=host  .
+ 1596  docker buildx build --help
+ 1597  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push  .
+ 1598  history | grep buildx
+ 1599  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push --allow network.host .
+ 1600  history
+ 1601  history | grep mbuilder
+ 1602  docker buildx create --name mbuilder --buildkitd-flags '--allow-insecure-entitlement network.host'
+ 1603  docker buildx rm mbuilder
+ 1604  docker buildx create --name mbuilder --buildkitd-flags '--allow-insecure-entitlement network.host'
+ 1605  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push --allow network.host .
+ 1606  docker ps
+ 1607  ls /etc/docker
+ 1608  cd
+ 1609  ls -al
+ 1610  cd .docker
+ 1611  ls
+ 1612  more config.json 
+ 1613  journalctl -xu docker.service
+ 1614  sudo dockerd --dns 8.8.8.8
+ 1615  sudo dockerd stop
+ 1616  sudo service docker stop
+ 1617  cd /etc/systemd
+ 1618  ls
+ 1619  stopcd system
+ 1620  cd system
+ 1621  ls
+ 1622  ls -l
+ 1623  ls
+ 1624  cd ../..
+ 1625  ls
+ 1626  find . -name docker*
+ 1627  cd init.d
+ 1628  ls
+ 1629  more docker
+ 1630  ls
+ 1631  cd ..
+ 1632  ls
+ 1633  cd docker/
+ 1634  ls
+ 1635  more key.json
+ 1636  sudo more key.json
+ 1637  cd ../init.d
+ 1638  ls
+ 1639  more docker
+ 1640  vi docker
+ 1641  cd /etc/docker
+ 1642  ls
+ 1643  sudo vi daemon.json
+ 1644  sudo service docker start
+ 1645  ls /var/log
+ 1646  journalctl -xu docker.service
+ 1647  cd
+ 1648  cd Projects/
+ 1649  ls
+ 1650  cd faasDemos/
+ 1651  ls
+ 1652  history | grep buildx
+ 1653  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push .
+ 1654  cd /etc
+ 1655  ls
+ 1656  cd netplan
+ 1657  ls
+ 1658  more 20-netplan-wifi.yaml.bak 
+ 1659  sudo vi 20-netplan-wifi.yaml.bak 
+ 1660  cd
+ 1661  cd Projects/
+ 1662  ls
+ 1663  cd /etc/netplan
+ 1664  ls
+ 1665  more 01-network-manager-all.yaml 
+ 1666  cd
+ 1667  cd Projects/
+ 1668  ls
+ 1669  cd faasDemos/
+ 1670  ls
+ 1671  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push .
+ 1672  ip a
+ 1673  ip a | more
+ 1674  docker buildx build -t img.service.consul/alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push .
+ 1675  docker buildx build -t alpine:test --platform=linux/amd64,linux/arm64,linux/arm --push .
+ 1676  ls
+ 1677  more Dockerfile 
+ 1678  docker buildx ls
+ 1679  docker buildx rm mbuilder
+ 1680  docker buildx ls
+ 1681  docker buildx user multiarch
+ 1682  docker buildx use multiarch
+ 1683  docker buildx ls
+ 1684  docker buildx build -t “${DOCKER_USER}/buildx-test:latest” --platform linux/amd64,linux/arm64 --push .
+ 1685  docker buildx build -t ${DOCKER_USER}/buildx-test:latest --platform linux/amd64,linux/arm64 --push .
+ 1686  history | grep builds
+ 1687  history | grep buildx
+ 1688  docker buildx build -t buildx-test:latest --platform linux/amd64,linux/arm64 --push .
+ 1689  cd /etc/init.d
+ 1690  ls
+ 1691  cd docker
+ 1692  ls
+ 1693  history | grep vi
+ 1694  ls
+ 1695  cd
+ 1696  history | grep cd
+ 1697  cd /etc/docker
+ 1698  ls
+ 1699  sudo mv daemon.json daemon.json.sav
+ 1700  cd
+ 1701  history | grep atart
+ 1702  grep st
+ 1703  history | grep start
+ 1704  sudo service docker stop
+ 1705  sudo service docker start
+ 1706  cd Projects/
+ 1707  cd faasDemos/
+ 1708  docker buildx build -t buildx-test:latest --platform linux/amd64,linux/arm64 --push .
+ 1709  sudo mv /etc/docker/daemon.json.sav /etc/docker/daemon.json
+ 1710  sudo vi /etc/docker/daemon.json
+ 1711  sudo service docker stop
+ 1712  sudo service docker start
+ 1713  history | grep journal
+ 1714  journalctl -xu docker.service
+ 1715  sudo service docker start
+ 1716  sudo vi /etc/docker/daemon.json
+ 1717  sudo service docker stop
+ 1718  sudo service docker start
+ 1719  journalctl -xu docker.service
+ 1720  sudo vi /etc/docker/daemon.json
+ 1721  ls /etc/docker
+ 1722  ls -l /etc/docker
+ 1723  docker ps
+ 1724  sudo service docker status
+ 1725  sudo service docker start
+ 1726  sudo service docker status
+ 1727  docker buildx build -t buildx-test:latest --platform linux/amd64,linux/arm64 --push .
+ 1728  docker login
+ 1729  docker buildx build -t buildx-test:latest --platform linux/amd64,linux/arm64 --push .
+ 1730  docker login
+ 1731  history | grep journal
+ 1732  journalctl -xu docker.service
+ 1733  sudo service docker status
+ 1734  sudo service docker stop
+ 1735  sudo service docker status
+ 1736  sudo service docker stop
+ 1737  sudo service docker status
+ 1738  ps -ef | grep docker
+ 1739  sudo service docker status
+ 1740  sudo reboot 0
+ 1741  cd
+ 1742  sudo service docker status
+ 1743  docker buildx build -t buildx-test:latest --platform linux/amd64 --push .
+ 1744  cd Projects/
+ 1745  cd faasDemos/
+ 1746  docker buildx build -t buildx-test:latest --platform linux/amd64 --push .
+ 1747  docker login
+ 1748  docker buildx build -t buildx-test:latest --platform linux/amd64 --push .
+ 1749  ls -l
+ 1750  cd ..
+ 1751  git clone https://github.com/docker/getting-started.git
+ 1752  ls
+ 1753  cd getting-started/
+ 1754  ls
+ 1755  more Dockerfile 
+ 1756  ls
+ 1757  docker build -t getting-started .
+ 1758  docker push docker/getting-started
+ 1759  docker push getting-started:latest
+ 1760  docker
+ 1761  docker login
+ 1762  docker info
+ 1763  docker push cwdrunner/getting-started:latest
+ 1764  docker tag getting-started cwdrunner/getting-started
+ 1765  docker push cwdrunner/getting-started:latest
+ 1766  ls
+ 1767  cd ../faasDemos/
+ 1768  ls
+ 1769  history | grep buildx
+ 1770  buildx build -t cwdrunner/buildx-test:latest --platform linux/amd64 --push .
+ 1771  docker buildx build -t cwdrunner/buildx-test:latest --platform linux/amd64 --push .
+ 1772  history | grep buildx
+ 1773  history | grep faas
+ 1774  history | grep buildx
+ 1775  history | grep getip
+ 1776  vi getip.yml
+ 1777  faas-cli 
+ 1778  history | grep getip
+ 1779  env | grep docker
+ 1780  env | grep Dock
+ 1781  cd
+ 1782  more .bashrc
+ 1783  history | grep getip
+ 1784  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1785  ls
+ 1786  cd Projects/
+ 1787  cd faasDemos/
+ 1788  ls
+ 1789  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1790  ls
+ 1791  faas-cli
+ 1792  ls
+ 1793  cd getip
+ 1794  ls
+ 1795  cd ..
+ 1796  cd build
+ 1797  ls
+ 1798  cd getip
+ 1799  ls
+ 1800  more Dockerfile 
+ 1801  cd ..
+ 1802  ls
+ 1803  cd ..
+ 1804  faas-cli registry-login
+ 1805  docker logout
+ 1806  docker login
+ 1807  faas-cli registry-login cwdrunner 540T6unRepo
+ 1808  faas-cli registry-login --username
+ 1809  faas-cli registry-login --username cwdrunner
+ 1810  faas-cli registry-login --username cwdrunner --password 540T6unRepo
+ 1811  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1812  docker login
+ 1813  faas-cli registry-login --username cwdrunner --password 540T6unRepo
+ 1814  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1815  buildx build --progress=plain --platform=linux/arm64 --output=type=registry,push=true --tag cwdrunner/getip:latest .
+ 1816  docker buildx build --progress=plain --platform=linux/arm64 --output=type=registry,push=true --tag cwdrunner/getip:latest .
+ 1817  vi ~/.bashrc
+ 1818  export DOCKER_USER=cwdrunner
+ 1819  more getip.yaml
+ 1820  ls
+ 1821  more getip.yml
+ 1822  vi getip.yml
+ 1823  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1824  more getip.yml
+ 1825  ssh pi@192.168.10.11
+ 1826  curl http://127.0.0.1:8080
+ 1827  curl https://127.0.0.1:8080
+ 1828  history
+ 1829  faas-cli publish -f getip.yml --platforms linux/arm64
+ 1830  history
+ 1831  faas-cli deploy -f getip.yml
+ 1832  ssh pi@192.168.10.11
+ 1833  more getip.yml
+ 1834  vi getip.yml
+ 1835  faas-cli deploy -f getip.yml
+ 1836  vi getip.yml
+ 1837  exit
+ 1838  cd Projects/
+ 1839  ls
+ 1840  cd faasDemos/
+ 1841  ls
+ 1842  history | grep deploy
+ 1843  ls
+ 1844  vi getip.yml
+ 1845  faas-cli deploy -f getip.yml
+ 1846  more getip.yml
+ 1847  curl 192.168.10.11:8080
+ 1848  curl http://192.168.10.11:8080
+ 1849  curl http://192.168.10.11:31112
+ 1850  curl http://192.168.10.11:8080
+ 1851  curl -v http://192.168.10.11:8080
+ 1852  faas-cli deploy -f getip.yml
+ 1853  faas-cli login
+ 1854  history | grep login
+ 1855  faas-cli login
+ 1856  PASSWORD=$(kubectl get secret -n openfaas basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode; echo)
+ 1857  # Above will store password in $PASSWORD environmental variable, this will disappear after relog.
+ 1858  faas-cli login 
+ 1859  faas-cli login --help
+ 1860  faas-cli login --username admin --password nlm9z5ixRa77V7bwo11N0Xm91
+ 1861  faas-cli login --username admin --password nlm9z5ixRa77V7bwo11N0Xm91 --gateway http://192.168.10.11:8080
+ 1862  faas-cli deploy -f getip.yml
+ 1863  git status
+ 1864  git init
+ 1865  ls
+ 1866  ls -al
+ 1867  vi .gitignore 
+ 1868  git status
+ 1869  rm reversestring.yml
+ 1870  rm -rf reversestring/
+ 1871  git status
+ 1872  git add .
+ 1873  git commit -m"initial post"
+ 1874  git status
+ 1875  git commit -m"initial post"
+ 1876  git push
+ 1877  git remote add origin git@github.com:cwdrunner/faasdemo.git
+ 1878  git pus -u origin master
+ 1879  git push -u origin master
+ 1880  git remote add origin https://github.com:cwdrunner/faasdemo.git
+ 1881  git push -u origin master
+ 1882  git push
+ 1883  git push --set-upstream origin master
+ 1884  git branch -M main
+ 1885  git remote add origin https://github.com/cwdrunner/faasdemo.git
+ 1886  git push -u origin main
+ 1887  git login
+ 1888  git config --list
+ 1889  git push -u origin main
+ 1890  cd ..
+ 1891  mv ./faasDemos ./tmp
+ 1892  git clone https://github.com/cwdrunner/faasdemo.git
+ 1893  ls -l
+ 1894  cd faasdemo/
+ 1895  ls
+ 1896  ls -l
+ 1897  cp ./tmp/* ./faasdemo
+ 1898  cd ..
+ 1899  cp ./tmp/* ./faasdemo
+ 1900  cp --help
+ 1901  cp -R ./tmp/* ./faasdemo
+ 1902  cd faasdemo/
+ 1903  ls -l
+ 1904  git status
+ 1905  git add .
+ 1906  git commit -m"Initial Commit"
+ 1907  git push
+ 1908  git pull
+ 1909  ls
+ 1910  history >> commands.txt
