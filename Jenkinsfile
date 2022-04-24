@@ -20,7 +20,7 @@ containers: [
 		sh "echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin"
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 // buildx is needed for multi-arch builds. Some mages have it but not this one
-                sh "mkdir ~/.docker ~/.docker/cli-plugins"
+                sh "mkdir -p ~/.docker/cli-plugins"
                 sh "curl -sLS https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx"
                 sh "chmod +x ~/.docker/cli-plugins/docker-buildx"
                 sh "dockerd &"
