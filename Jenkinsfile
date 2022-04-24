@@ -13,7 +13,7 @@ containers: [
   		// note: single quotes prevent Groovy interpolation; expansion is by Bourne Shell, which is what you want
   		sh 'echo $DOCKER_PASSWORD'
   		// also available as a Groovy variable
-  		echo USERNAME
+  		echo DOCKER_USERNAME
   		// or inside double quotes for string interpolation
  		echo "username is $DOCKER_USERNAME"
 		}
