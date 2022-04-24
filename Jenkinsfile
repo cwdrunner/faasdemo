@@ -10,6 +10,8 @@ containers: [
             container("dind") {
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 sh "dockerd &"
+                sh "docker run --rm --privileged multiarch/qemu-user-static --reset -p yes"
+                sh "export DOCKER_CLI_EXPERIMENTAL=enabled"
                 sh "docker info"
                 sh "faas-cli template store pull java11"
                 sh "faas-cli publish -f getip.yml --platforms linux/arm64"
