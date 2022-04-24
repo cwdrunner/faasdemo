@@ -5,12 +5,19 @@ containers: [
   ]) {
     node(label) {
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/cwdrunner/faasdemo.git']]])
-        environment {
-		    DOCKERHUB_CREDENTIALS=credentials('docker-cwdrunner')
-	       }
+	    
         stage("Docker info")  {
             container("dind") {
-		sh "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"
+		 withCredentials([usernamePassword(credentialsId: 'docker-cwdrunner', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+  		// available as an env variable, but will be masked if you try to print it out any which way
+  		// note: single quotes prevent Groovy interpolation; expansion is by Bourne Shell, which is what you want
+  		sh 'echo $DOCKER_PASSWORD'
+  		// also available as a Groovy variable
+  		echo USERNAME
+  		// or inside double quotes for string interpolation
+ 		echo "username is $DOCKER_USERNAME"
+		}
+		sh "echo $DOCKER_USERNAME | docker login -u $DOCKER_PASSWORD --password-stdin"
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 // buildx is needed for multi-arch builds. Some mages have it but not this one
                 sh "mkdir ~/.docker ~/.docker/cli-plugins"
