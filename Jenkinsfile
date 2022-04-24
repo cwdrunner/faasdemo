@@ -9,7 +9,7 @@ containers: [
         stage("Docker info")  {
             container("dind") {
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
-                sh "mkdir ~/.docker/cli-plugins"
+                sh "mkdir ~/.docker ~/.docker/cli-plugins"
                 sh "curl -sLS https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx"
                 sh "chmod +x ~/.docker/cli-plugins/docker-buildx"
                 sh "dockerd &"
