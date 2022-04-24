@@ -10,8 +10,8 @@ containers: [
             container("dind") {
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 sh "find / -name cli-plugins"
-                sh "curl -sLS https://github.com/docker/buildx/releases/tag/v0.8.2 -o ~/.docker/docker-buildx"
-                sh "chmod +x ~/.docker/cli-plugins/docker-buildx"
+                sh "curl -sLS https://github.com/docker/buildx/releases/tag/v0.8.2 -o /usr/libexec/docker/cli-plugins/docker-buildx"
+                sh "chmod +x /usr/libexec/docker/cli-plugins/docker-buildx"
                 sh "dockerd &"
                 sh "docker buildx install"
                 sh "docker run --rm --privileged multiarch/qemu-user-static --reset -p yes"
