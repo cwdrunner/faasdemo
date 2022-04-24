@@ -3,7 +3,7 @@ This is one of those home lab projects. Initially this README contains a general
 
 This particular repo is going to be focused on Functions As A Service or faas. There are several versions of this and I'm going to try and get familair with several of them and document what I learned and the issues encountered. 
 
-## Flavoers of faas
+## Flavors of faas
 I already have some experience using AWS Lambdas on a project. It helped me to identify some of things to look out for. 
 - Limited memory. We were using typescript and the application wanted to include many, many packages. Look at dry it you want to keep these down. 
 - Warm startup versus cold startup. This is important for scaling
