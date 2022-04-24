@@ -16,7 +16,7 @@ containers: [
   		echo DOCKER_USERNAME
   		// or inside double quotes for string interpolation
  		echo "username is $DOCKER_USERNAME"
-		}
+		
 		sh "echo $DOCKER_USERNAME | docker login -u $DOCKER_PASSWORD --password-stdin"
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 // buildx is needed for multi-arch builds. Some mages have it but not this one
@@ -33,6 +33,7 @@ containers: [
                 sh "faas-cli template store pull java11"
                 sh "faas-cli publish -f getip.yml --platforms linux/arm64"
                 sh "killall dockerd"
+		 }
             }
         }
     }
