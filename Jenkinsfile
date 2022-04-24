@@ -10,6 +10,7 @@ containers: [
             container("dind") {
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 sh "find / -name cli-plugins"
+                sh "mkdir .docker"
                 sh "curl -sLS https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64 -o ~/.docker/docker-buildx"
                 sh "chmod +x ~/.docker/docker-buildx"
                 sh "dockerd &"
