@@ -9,13 +9,12 @@ containers: [
         stage("Docker info")  {
             container("dind") {
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
-                sh "find / -name cli-plugins"
-                sh "mkdir ~/.docker"
-                sh "curl -sLS https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64 -o ~/.docker/docker-buildx"
-                sh "chmod +x ~/.docker/docker-buildx"
+                sh "mkdir ~/.docker/cli-plugins"
+                sh "curl -sLS https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx"
+                sh "chmod +x ~/.docker/cli-plugins/docker-buildx"
                 sh "dockerd &"
-                sh "docker plugin install buildx"
-                // sh "docker buildx install"
+                // sh "docker plugin install buildx"
+                sh "docker buildx install"
                 sh "docker run --rm --privileged multiarch/qemu-user-static --reset -p yes"
                 sh "export DOCKER_CLI_EXPERIMENTAL=enabled"
                 sh "docker info"
