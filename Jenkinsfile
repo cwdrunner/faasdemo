@@ -8,14 +8,9 @@ containers: [
         environment {
 		    DOCKERHUB_CREDENTIALS=credentials('docker-cwdrunner')
 	       }
-        stage('Login') {
-
-			steps {
-				sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-			}
-		}
         stage("Docker info")  {
             container("dind") {
+		sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 // buildx is needed for multi-arch builds. Some mages have it but not this one
                 sh "mkdir ~/.docker ~/.docker/cli-plugins"
