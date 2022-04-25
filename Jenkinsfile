@@ -17,11 +17,8 @@ containers: [
   		// or inside double quotes for string interpolation
  		echo "username is $DOCKER_USER"
 		sh "echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin"
-			 
-		// Other stuff missing
-		sh "apk add unzip"
-	
-		// Start man install
+			 	
+		// Start main install
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 // buildx is needed for multi-arch builds. Some mages have it but not this one
                 sh "mkdir -p ~/.docker/cli-plugins"
