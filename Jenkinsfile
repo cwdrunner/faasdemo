@@ -28,7 +28,8 @@ containers: [
                 sh "docker run --rm --privileged multiarch/qemu-user-static --reset -p yes"
                 sh "export DOCKER_CLI_EXPERIMENTAL=enabled"
                 // Needed for faas-cli conversion
-                sh "export DOCKER_USER=cwdrunner"
+                sh "export DOCKER_USER='cwdrunner'"
+		sh "echo docker user is $DOCKER_USER"
                 sh "docker info"
                 sh "faas-cli template store pull java11"
                 sh "faas-cli publish -f getip.yml --platforms linux/arm64"
