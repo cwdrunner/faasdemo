@@ -8,16 +8,16 @@ containers: [
 	    
         stage("Docker info")  {
             container("dind") {
-		 withCredentials([usernamePassword(credentialsId: 'docker-cwdrunner', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+		 withCredentials([usernamePassword(credentialsId: 'docker-cwdrunner', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASSWORD')]) {
   		// available as an env variable, but will be masked if you try to print it out any which way
   		// note: single quotes prevent Groovy interpolation; expansion is by Bourne Shell, which is what you want
   		sh 'echo $DOCKER_PASSWORD'
   		// also available as a Groovy variable
-  		echo DOCKER_USERNAME
+  		echo DOCKER_USER
   		// or inside double quotes for string interpolation
- 		echo "username is $DOCKER_USERNAME"
+ 		echo "username is $DOCKER_USER"
 		
-		sh "echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin"
+		sh "echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin"
                 sh "apk add --no-cache curl git && curl -sLS cli.openfaas.com | sh"
                 // buildx is needed for multi-arch builds. Some mages have it but not this one
                 sh "mkdir -p ~/.docker/cli-plugins"
@@ -33,6 +33,7 @@ containers: [
 		sh "echo docker user is $DOCKER_USER"
                 sh "docker info"
                 sh "faas-cli template store pull java11"
+		// DOCKER_USER is used in getip.yml
                 sh "faas-cli publish -f getip.yml --platforms linux/arm64"
                 sh "killall dockerd"
 		 }
