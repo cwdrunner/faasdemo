@@ -25,7 +25,8 @@ containers: [
                 sh "chmod +x ~/.docker/cli-plugins/docker-buildx"
                 sh "dockerd &"
                 sh "docker buildx install"
-                sh "docker run --rm --privileged multiarch/qemu-user-static --reset -p yes"
+	 	// This may or may not be needed.
+                // sh "docker run --rm --privileged multiarch/qemu-user-static --reset -p yes"
                 sh "export DOCKER_CLI_EXPERIMENTAL=enabled"
                 // Needed for faas-cli conversion
                 sh "export DOCKER_USER='cwdrunner'"
