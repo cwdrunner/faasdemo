@@ -1,7 +1,4 @@
-// Rebuild this to execute natively. jenkinsfile.old looks good but may fail because of memory or network
-
-
-def label = "build-pod-${UUID.randomUUID().toString()}"
+def label = "mypod-${UUID.randomUUID().toString()}"
 podTemplate(label: label,
 containers: [
     containerTemplate(privileged: true, name: 'dind', image: 'docker:dind', ttyEnabled: true, command: 'cat')

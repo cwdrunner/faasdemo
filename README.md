@@ -41,3 +41,5 @@ OpenFaas Deployment guide for Kubernetes https://docs.openfaas.com/deployment/ku
 
 https://rpi4cluster.com/ 
 
+## Notes
+Seeing --user is not a parameter means buildx is not installed.
