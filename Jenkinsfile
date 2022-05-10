@@ -27,6 +27,7 @@ containers: [
                 sh "mkdir -p ~/.docker/cli-plugins"
                 sh "curl -sLS https://github.com/docker/buildx/releases/download/v0.8.2/buildx-v0.8.2.linux-amd64 -o ~/.docker/cli-plugins/docker-buildx"
                 sh "chmod +x ~/.docker/cli-plugins/docker-buildx"
+		sh "alias buildx='buildx --network host'"
                 sh "dockerd &"
                 sh "docker buildx install"
 	 	// This may or may not be needed.
